@@ -10,6 +10,7 @@
 		865966BB23BCA8DC00241E63 /* BannerTopToDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865966B823BCA8DC00241E63 /* BannerTopToDown.swift */; };
 		865966BC23BCA8DC00241E63 /* NotificationAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865966B923BCA8DC00241E63 /* NotificationAlertBanner.swift */; };
 		865966BD23BCA8DC00241E63 /* BannerRightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865966BA23BCA8DC00241E63 /* BannerRightToLeft.swift */; };
+		865966C023BCB92700241E63 /* BannerTopToDown.gif in Resources */ = {isa = PBXBuildFile; fileRef = 865966BF23BCB92700241E63 /* BannerTopToDown.gif */; };
 		86D6970D23BC7B0C003F2980 /* NotificationAlertBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D6970323BC7B0C003F2980 /* NotificationAlertBanner.framework */; };
 		86D6971223BC7B0C003F2980 /* NotificationAlertBannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6971123BC7B0C003F2980 /* NotificationAlertBannerTests.swift */; };
 		86D6971423BC7B0C003F2980 /* NotificationAlertBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +30,7 @@
 		865966B823BCA8DC00241E63 /* BannerTopToDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerTopToDown.swift; sourceTree = "<group>"; };
 		865966B923BCA8DC00241E63 /* NotificationAlertBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAlertBanner.swift; sourceTree = "<group>"; };
 		865966BA23BCA8DC00241E63 /* BannerRightToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerRightToLeft.swift; sourceTree = "<group>"; };
+		865966BF23BCB92700241E63 /* BannerTopToDown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BannerTopToDown.gif; sourceTree = "<group>"; };
 		86D6970323BC7B0C003F2980 /* NotificationAlertBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationAlertBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationAlertBanner.h; sourceTree = "<group>"; };
 		86D6970723BC7B0C003F2980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 			path = NotificationBanner;
 			sourceTree = "<group>";
 		};
+		865966BE23BCB8E800241E63 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				865966BF23BCB92700241E63 /* BannerTopToDown.gif */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		86D696F923BC7B0C003F2980 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 				86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */,
 				86D6970723BC7B0C003F2980 /* Info.plist */,
 				865966B723BCA8DC00241E63 /* NotificationBanner */,
+				865966BE23BCB8E800241E63 /* Assets */,
 			);
 			path = NotificationAlertBanner;
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865966C023BCB92700241E63 /* BannerTopToDown.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
