@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "NotificationAlertBanner"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Add NotificationAlertBanner"
   
   spec.description  = <<-DESC
