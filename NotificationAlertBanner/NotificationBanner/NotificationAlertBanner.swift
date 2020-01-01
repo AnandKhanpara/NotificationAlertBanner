@@ -13,7 +13,7 @@ public final class NotificationAlertBanner: NSObject {
     
     typealias NAB = NotificationAlertBanner
     
-    class func add(notificationStyle: NotificationStyle = .topToDownScrollDetails ,title:String? = "", details:String? = "", image:UIImage? = nil) {
+    public final class func add(notificationStyle: NotificationStyle = .topToDownScrollDetails ,title:String? = "", details:String? = "", image:UIImage? = nil) {
         
         switch notificationStyle {
         case .topToDownScrollDetails:
@@ -30,9 +30,8 @@ public final class NotificationAlertBanner: NSObject {
             }
         }
     }
-    
-    enum NotificationStyle {
-        case topToDownScrollDetails
-    }
 }
 
+public enum NotificationStyle {
+    case topToDownScrollDetails
+}
