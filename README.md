@@ -1,2 +1,5 @@
 # NotificationAlertBanner
 NotificationAlertBanner
+```
+pod 'NotificationAlertBanner'
+```
