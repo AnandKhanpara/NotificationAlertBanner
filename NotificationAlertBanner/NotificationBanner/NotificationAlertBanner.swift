@@ -13,11 +13,15 @@ public final class NotificationAlertBanner: NSObject {
     
     typealias NAB = NotificationAlertBanner
     
-    public final class func add(notificationStyle: NotificationStyle = .topToDownScrollDetails ,title:String? = "", details:String? = "", image:UIImage? = nil) {
+    public final class func add(notificationStyle: NotificationStyle = .topToDown ,title:String? = "", details:String? = "", image:UIImage? = nil) {
         
         switch notificationStyle {
-        case .topToDownScrollDetails:
-            NAB.addNotificationBanner(viewBanner: BannerTopToDownScrollDetails(title: title, details: details, image: image))
+        case .topToDown:
+            NAB.addNotificationBanner(viewBanner: BannerTopToDown(title: title, details: details, image: image))
+        case .rightToLeft:
+            NAB.addNotificationBanner(viewBanner: BannerRightToLeft(title: title, details: details, image: image))
+            
+            break 
         }
         
     }
@@ -33,5 +37,6 @@ public final class NotificationAlertBanner: NSObject {
 }
 
 public enum NotificationStyle {
-    case topToDownScrollDetails
+    case topToDown
+    case rightToLeft
 }

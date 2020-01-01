@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		865966BB23BCA8DC00241E63 /* BannerTopToDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865966B823BCA8DC00241E63 /* BannerTopToDown.swift */; };
+		865966BC23BCA8DC00241E63 /* NotificationAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865966B923BCA8DC00241E63 /* NotificationAlertBanner.swift */; };
+		865966BD23BCA8DC00241E63 /* BannerRightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865966BA23BCA8DC00241E63 /* BannerRightToLeft.swift */; };
 		86D6970D23BC7B0C003F2980 /* NotificationAlertBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D6970323BC7B0C003F2980 /* NotificationAlertBanner.framework */; };
 		86D6971223BC7B0C003F2980 /* NotificationAlertBannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6971123BC7B0C003F2980 /* NotificationAlertBannerTests.swift */; };
 		86D6971423BC7B0C003F2980 /* NotificationAlertBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86D6972023BC7B59003F2980 /* BannerTopToDownScrollDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6971E23BC7B59003F2980 /* BannerTopToDownScrollDetails.swift */; };
-		86D6972123BC7B59003F2980 /* NotificationAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6971F23BC7B59003F2980 /* NotificationAlertBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		865966B823BCA8DC00241E63 /* BannerTopToDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerTopToDown.swift; sourceTree = "<group>"; };
+		865966B923BCA8DC00241E63 /* NotificationAlertBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAlertBanner.swift; sourceTree = "<group>"; };
+		865966BA23BCA8DC00241E63 /* BannerRightToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerRightToLeft.swift; sourceTree = "<group>"; };
 		86D6970323BC7B0C003F2980 /* NotificationAlertBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationAlertBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationAlertBanner.h; sourceTree = "<group>"; };
 		86D6970723BC7B0C003F2980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86D6970C23BC7B0C003F2980 /* NotificationAlertBannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationAlertBannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D6971123BC7B0C003F2980 /* NotificationAlertBannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertBannerTests.swift; sourceTree = "<group>"; };
 		86D6971323BC7B0C003F2980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86D6971E23BC7B59003F2980 /* BannerTopToDownScrollDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerTopToDownScrollDetails.swift; sourceTree = "<group>"; };
-		86D6971F23BC7B59003F2980 /* NotificationAlertBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationAlertBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		865966B723BCA8DC00241E63 /* NotificationBanner */ = {
+			isa = PBXGroup;
+			children = (
+				865966B923BCA8DC00241E63 /* NotificationAlertBanner.swift */,
+				865966B823BCA8DC00241E63 /* BannerTopToDown.swift */,
+				865966BA23BCA8DC00241E63 /* BannerRightToLeft.swift */,
+			);
+			path = NotificationBanner;
+			sourceTree = "<group>";
+		};
 		86D696F923BC7B0C003F2980 = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +89,7 @@
 			children = (
 				86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */,
 				86D6970723BC7B0C003F2980 /* Info.plist */,
-				86D6971D23BC7B59003F2980 /* NotificationBanner */,
+				865966B723BCA8DC00241E63 /* NotificationBanner */,
 			);
 			path = NotificationAlertBanner;
 			sourceTree = "<group>";
@@ -89,15 +101,6 @@
 				86D6971323BC7B0C003F2980 /* Info.plist */,
 			);
 			path = NotificationAlertBannerTests;
-			sourceTree = "<group>";
-		};
-		86D6971D23BC7B59003F2980 /* NotificationBanner */ = {
-			isa = PBXGroup;
-			children = (
-				86D6971F23BC7B59003F2980 /* NotificationAlertBanner.swift */,
-				86D6971E23BC7B59003F2980 /* BannerTopToDownScrollDetails.swift */,
-			);
-			path = NotificationBanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86D6972023BC7B59003F2980 /* BannerTopToDownScrollDetails.swift in Sources */,
-				86D6972123BC7B59003F2980 /* NotificationAlertBanner.swift in Sources */,
+				865966BD23BCA8DC00241E63 /* BannerRightToLeft.swift in Sources */,
+				865966BB23BCA8DC00241E63 /* BannerTopToDown.swift in Sources */,
+				865966BC23BCA8DC00241E63 /* NotificationAlertBanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

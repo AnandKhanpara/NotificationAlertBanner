@@ -9,10 +9,18 @@
 import Foundation
 import UIKit
 
-public final class BannerTopToDownScrollDetails: UIView {
+public final class BannerTopToDown: UIView {
     
     public init(frame: CGRect = CGRect(), title:String? = "", details:String? = "", image:UIImage? = nil) {
         super.init(frame: frame)
+        self.setAddView(title: title, details: details, image: image)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setAddView(title:String? = "", details:String? = "", image:UIImage? = nil) {
         
         let window = UIApplication.shared.windows
         
@@ -51,6 +59,7 @@ public final class BannerTopToDownScrollDetails: UIView {
         bannerCell.heightAnchor.constraint(equalToConstant: 70).isActive = true
         
         topAnchorConstraintBannerCell?.isActive = true
+        backGroundView.alpha = 0
         
         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
         let blurView = UIVisualEffectView(effect: blurEffect)
@@ -103,38 +112,50 @@ public final class BannerTopToDownScrollDetails: UIView {
         labelDetails.topAnchor.constraint(equalTo: viewDetailsBG.topAnchor, constant: 0).isActive = true
         labelDetails.bottomAnchor.constraint(equalTo: viewDetailsBG.bottomAnchor, constant: 0).isActive = true
         
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
+                backGroundView.alpha = 1
                 topAnchorConstraintBannerCell?.constant = topSafe
                 self.layoutIfNeeded()
             }) { _ in
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ) {
-                    let animatedWidth = (labelDetails.frame.size.width - viewDetailsBG.frame.size.width)
-                    UIView.animate(withDuration: TimeInterval(0.007 * animatedWidth), delay: 0, options: .curveLinear, animations: {
-                        labelDetails.transform = CGAffineTransform(translationX: -animatedWidth, y: labelDetails.frame.origin.y)
-                        self.layoutIfNeeded()
-                    }) { _ in
-                        
-                        UIView.animate(withDuration: 0.3, delay: 0.5, options: .curveLinear, animations: {
-                            topAnchorConstraintBannerCell?.constant = -bannerViewHeight
-                            self.layoutIfNeeded()
-                        }) { _ in
-                            
-                            DispatchQueue.main.async {
-                                self.removeFromSuperview()
-                            }
-                        }
-                    }
+                    longDetailsToScrollingLeftToRight()
                 }
             }
         }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        
+        func longDetailsToScrollingLeftToRight() {
+            
+            let animatedWidth = (labelDetails.frame.size.width - viewDetailsBG.frame.size.width)
+            
+            if 0 < animatedWidth {
+                UIView.animate(withDuration: TimeInterval(0.01 * animatedWidth), delay: 0, options: .curveLinear, animations: {
+                    labelDetails.transform = CGAffineTransform(translationX: -animatedWidth, y: labelDetails.frame.origin.y)
+                    self.layoutIfNeeded()
+                }) { _ in
+                    hideSelfViewAndRemoveSuperView()
+                }
+            }else {
+                hideSelfViewAndRemoveSuperView()
+            }
+        }
+        
+        func hideSelfViewAndRemoveSuperView() {
+            
+            UIView.animate(withDuration: 0.3, delay: 1, options: .curveLinear, animations: {
+                backGroundView.alpha = 0
+                topAnchorConstraintBannerCell?.constant = -bannerViewHeight
+                self.layoutIfNeeded()
+            }) { _ in
+                
+                DispatchQueue.main.async {
+                    self.removeFromSuperview()
+                }
+            }
+        }
+        
     }
 }
     
