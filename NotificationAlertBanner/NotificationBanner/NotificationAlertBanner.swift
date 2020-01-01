@@ -40,3 +40,8 @@ public enum NotificationStyle {
     case topToDown
     case rightToLeft
 }
+//https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/BannerTopToDown.gif
+
+//## NotificationAlertBanner Style
+//### 1. topToDown
+//![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/topToDown.gif)
