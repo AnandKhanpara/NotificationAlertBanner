@@ -5,6 +5,8 @@ pod 'NotificationAlertBanner', '0.0.3'
 ```
 
 ## NotificationAlertBanner Style
-### 1. topToDown
-![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/BannerTopToDownNew.gif)
 
+| Type | Type | 
+|---|---|
+|1. topToDown | 2. rightToLeft |
+|![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/BannerTopToDownNew.gif) |![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/BannerTopToDownNew.gif)|
