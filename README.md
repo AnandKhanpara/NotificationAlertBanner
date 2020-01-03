@@ -20,3 +20,5 @@ import NotificationAlertBanner
 ## Initialization
 
 ![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/InitializationCode.png)
+
+![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/InitializationCode1.png)
