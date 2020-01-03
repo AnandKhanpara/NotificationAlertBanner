@@ -15,6 +15,7 @@
 		86D6971223BC7B0C003F2980 /* NotificationAlertBannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6971123BC7B0C003F2980 /* NotificationAlertBannerTests.swift */; };
 		86D6971423BC7B0C003F2980 /* NotificationAlertBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86F74B8123BF5974007DDE44 /* BannerRightToLeftNew.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86F74B8023BF5974007DDE44 /* BannerRightToLeftNew.gif */; };
+		86F74B8523BF607F007DDE44 /* InitializationCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F74B8423BF607F007DDE44 /* InitializationCode.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		86D6971123BC7B0C003F2980 /* NotificationAlertBannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlertBannerTests.swift; sourceTree = "<group>"; };
 		86D6971323BC7B0C003F2980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F74B8023BF5974007DDE44 /* BannerRightToLeftNew.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BannerRightToLeftNew.gif; sourceTree = "<group>"; };
+		86F74B8423BF607F007DDE44 /* InitializationCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InitializationCode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		865966BE23BCB8E800241E63 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				86F74B8423BF607F007DDE44 /* InitializationCode.png */,
 				865966C523BCC16C00241E63 /* BannerTopToDownNew.gif */,
 				86F74B8023BF5974007DDE44 /* BannerRightToLeftNew.gif */,
 			);
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				865966C623BCC16D00241E63 /* BannerTopToDownNew.gif in Resources */,
+				86F74B8523BF607F007DDE44 /* InitializationCode.png in Resources */,
 				86F74B8123BF5974007DDE44 /* BannerRightToLeftNew.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
