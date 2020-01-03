@@ -16,6 +16,7 @@
 		86D6971423BC7B0C003F2980 /* NotificationAlertBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D6970623BC7B0C003F2980 /* NotificationAlertBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86F74B8123BF5974007DDE44 /* BannerRightToLeftNew.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86F74B8023BF5974007DDE44 /* BannerRightToLeftNew.gif */; };
 		86F74B8523BF607F007DDE44 /* InitializationCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F74B8423BF607F007DDE44 /* InitializationCode.png */; };
+		86F74B8923BF6276007DDE44 /* InitializationCode1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86F74B8823BF6276007DDE44 /* InitializationCode1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		86D6971323BC7B0C003F2980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86F74B8023BF5974007DDE44 /* BannerRightToLeftNew.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BannerRightToLeftNew.gif; sourceTree = "<group>"; };
 		86F74B8423BF607F007DDE44 /* InitializationCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InitializationCode.png; sourceTree = "<group>"; };
+		86F74B8823BF6276007DDE44 /* InitializationCode1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InitializationCode1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				86F74B8423BF607F007DDE44 /* InitializationCode.png */,
+				86F74B8823BF6276007DDE44 /* InitializationCode1.png */,
 				865966C523BCC16C00241E63 /* BannerTopToDownNew.gif */,
 				86F74B8023BF5974007DDE44 /* BannerRightToLeftNew.gif */,
 			);
@@ -214,6 +217,7 @@
 			files = (
 				865966C623BCC16D00241E63 /* BannerTopToDownNew.gif in Resources */,
 				86F74B8523BF607F007DDE44 /* InitializationCode.png in Resources */,
+				86F74B8923BF6276007DDE44 /* InitializationCode1.png in Resources */,
 				86F74B8123BF5974007DDE44 /* BannerRightToLeftNew.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
