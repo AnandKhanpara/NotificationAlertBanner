@@ -18,7 +18,6 @@ public final class BannerRightToLeft: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        //Anand Khanpara
     }
     
     func setAddView(title:String? = "", details:String? = "", image:UIImage? = nil) {
