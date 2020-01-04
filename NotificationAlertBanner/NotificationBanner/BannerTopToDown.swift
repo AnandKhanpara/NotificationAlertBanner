@@ -21,7 +21,7 @@ public final class BannerTopToDown: UIView {
     }
     
     func setAddView(title:String? = "", details:String? = "", image:UIImage? = nil) {
-        
+   
         let window = UIApplication.shared.windows
         
         guard let backGroundViewFrame = window.last?.frame else {
@@ -61,10 +61,26 @@ public final class BannerTopToDown: UIView {
         topAnchorConstraintBannerCell?.isActive = true
         backGroundView.alpha = 0
         
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = bannerCell.bounds
-        bannerCell.addSubview(blurView)
+        if  let borderColor = NotificationAlertBanner.bannerBorderColor,
+            let borderWidth = NotificationAlertBanner.bannerBorderWidth {
+            bannerCell.layer.borderColor = borderColor.cgColor
+            bannerCell.layer.borderWidth = borderWidth
+        }
+        
+        if let backImage = NotificationAlertBanner.bannerBackGroundImage {
+            let imageView = UIImageView(image: backImage)
+            imageView.frame = bannerCell.bounds
+            imageView.clipsToBounds = true
+            imageView.contentMode = .scaleAspectFill
+            bannerCell.addSubview(imageView)
+        }else if let backColor = NotificationAlertBanner.bannerBackGroundColor {
+            bannerCell.backgroundColor = backColor
+        }else {
+            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
+            let blurView = UIVisualEffectView(effect: blurEffect)
+            blurView.frame = bannerCell.bounds
+            bannerCell.addSubview(blurView)
+        }
         
         let imageView = UIImageView(image: image)
         imageView.clipsToBounds = true
@@ -73,19 +89,31 @@ public final class BannerTopToDown: UIView {
         bannerCell.addSubview(imageView)
         
         imageView.leadingAnchor.constraint(equalTo: bannerCell.leadingAnchor, constant: 10).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        if image == nil {
+            imageView.widthAnchor.constraint(equalToConstant: 0).isActive = true
+        }else {
+            imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        }
         imageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         imageView.centerYAnchor.constraint(equalTo: bannerCell.centerYAnchor, constant: 0).isActive = true
         
         let labelTitle = UILabel()
         labelTitle.frame = self.bounds
         labelTitle.text = title
-        labelTitle.font = UIFont.boldSystemFont(ofSize: 14)
-        labelTitle.textColor = UIColor.black
+        if let titleFontName = NotificationAlertBanner.bannerTitleFontName {
+            labelTitle.font = UIFont(name: titleFontName, size: 14)
+        }else {
+            labelTitle.font = UIFont.boldSystemFont(ofSize: 14)
+        }
+        if let titleColor = NotificationAlertBanner.bannerTitleFontColor {
+            labelTitle.textColor = titleColor
+        }else {
+            labelTitle.textColor = UIColor.black
+        }
         labelTitle.translatesAutoresizingMaskIntoConstraints = false
         bannerCell.addSubview(labelTitle)
         
-        labelTitle.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 10).isActive = true
+        labelTitle.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: image == nil ? 0 : 10).isActive = true
         labelTitle.trailingAnchor.constraint(equalTo: bannerCell.trailingAnchor, constant: -10).isActive = true
         labelTitle.heightAnchor.constraint(equalToConstant: 30).isActive = true
         labelTitle.topAnchor.constraint(equalTo: imageView.topAnchor, constant: 0).isActive = true
@@ -95,7 +123,7 @@ public final class BannerTopToDown: UIView {
         viewDetailsBG.translatesAutoresizingMaskIntoConstraints = false
         bannerCell.addSubview(viewDetailsBG)
         
-        viewDetailsBG.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 10).isActive = true
+        viewDetailsBG.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant:  image == nil ? 0 : 10).isActive = true
         viewDetailsBG.trailingAnchor.constraint(equalTo: bannerCell.trailingAnchor, constant: -10).isActive = true
         viewDetailsBG.heightAnchor.constraint(equalToConstant: 30).isActive = true
         viewDetailsBG.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 0).isActive = true
@@ -103,8 +131,16 @@ public final class BannerTopToDown: UIView {
         let labelDetails = UILabel()
         labelDetails.frame = self.bounds
         labelDetails.text = details
-        labelDetails.font = UIFont.systemFont(ofSize: 14)
-        labelDetails.textColor = UIColor.black
+        if let detailsFontName = NotificationAlertBanner.bannerDetailsFontName {
+            labelDetails.font = UIFont(name: detailsFontName, size: 14)
+        }else {
+            labelDetails.font = UIFont.systemFont(ofSize: 14)
+        }
+        if let detailsColor = NotificationAlertBanner.bannerDetailsFontColor {
+            labelDetails.textColor = detailsColor
+        }else {
+            labelDetails.textColor = UIColor.black
+        }
         labelDetails.translatesAutoresizingMaskIntoConstraints = false
         viewDetailsBG.addSubview(labelDetails)
         
