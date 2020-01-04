@@ -2,8 +2,8 @@
 //  NotificationAlertBannerTests.swift
 //  NotificationAlertBannerTests
 //
-//  Created by ZerOnes on 01/01/2020.
-//  Copyright © 2020 ZerOnes. All rights reserved.
+//  Created by Anand Khanpara on 01/01/2020.
+//  Copyright © 2020 Anand Khanpara. All rights reserved.
 //
 
 import XCTest

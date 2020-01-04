@@ -1,9 +1,9 @@
 //
-//  BannerRightToLeftScrollDetails.swift
+//  BannerRightToLeft.swift
 //  NotificationAlertBannerExample
 //
-//  Created by ZerOnes on 01/01/2020.
-//  Copyright © 2020 ZerOnes. All rights reserved.
+//  Created by Anand Khanpara on 01/01/2020.
+//  Copyright © 2020 Anand Khanpara. All rights reserved.
 //
 
 import Foundation
@@ -18,6 +18,7 @@ public final class BannerRightToLeft: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+        //Anand Khanpara
     }
     
     func setAddView(title:String? = "", details:String? = "", image:UIImage? = nil) {

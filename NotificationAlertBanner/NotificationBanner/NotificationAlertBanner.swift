@@ -1,9 +1,9 @@
 //
-//  MessageBanner.swift
+//  NotificationAlertBanner.swift
 //  MessageBanner
 //
-//  Created by ZerOnes on 30/12/2019.
-//  Copyright © 2019 ZerOnes. All rights reserved.
+//  Created by Anand Khanpara on 30/12/2019.
+//  Copyright © 2019 Anand Khanpara. All rights reserved.
 //
 
 import Foundation
