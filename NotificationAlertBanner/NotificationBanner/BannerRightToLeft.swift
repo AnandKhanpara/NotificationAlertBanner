@@ -66,8 +66,8 @@ public final class BannerRightToLeft: UIView {
         
         if  let borderColor = NotificationAlertBanner.bannerBorderColor,
             let borderWidth = NotificationAlertBanner.bannerBorderWidth {
-            backGroundView.layer.borderColor = borderColor.cgColor
-            backGroundView.layer.borderWidth = borderWidth
+            bannerCell.layer.borderColor = borderColor.cgColor
+            bannerCell.layer.borderWidth = borderWidth
         }
         
         if let backImage = NotificationAlertBanner.bannerBackGroundImage {
