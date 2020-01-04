@@ -13,14 +13,14 @@ public final class NotificationAlertBanner: NSObject {
     
     typealias NAB = NotificationAlertBanner
     
-    static var bannerBackGroundColor:UIColor? = nil
-    static var bannerBackGroundImage:UIImage? = nil
-    static var bannerTitleFontName:String? = nil
-    static var bannerDetailsFontName:String? = nil
-    static var bannerTitleFontColor:UIColor? = nil
-    static var bannerDetailsFontColor:UIColor? = nil
-    static var bannerBorderColor:UIColor? = nil
-    static var bannerBorderWidth:CGFloat? = nil
+    public static var bannerBackGroundColor:UIColor? = nil
+    public static var bannerBackGroundImage:UIImage? = nil
+    public static var bannerTitleFontName:String? = nil
+    public static var bannerDetailsFontName:String? = nil
+    public static var bannerTitleFontColor:UIColor? = nil
+    public static var bannerDetailsFontColor:UIColor? = nil
+    public static var bannerBorderColor:UIColor? = nil
+    public static var bannerBorderWidth:CGFloat? = nil
     
     public final class func add(style: NotificationStyle = .topToDown ,title:String? = "", details:String? = "", image:UIImage? = nil) {
         switch style {
