@@ -7,7 +7,7 @@ NotificationAlertBanner
 ![alt tag](https://github.com/AnandKhanpara/GitProHubSupporting/blob/master/GitProHubSupporting/NAB/NAB_A_1.gif) 
 
 
-## Style
+### Style
 
 | Type | Type | Type |
 |---|---|---|
@@ -22,7 +22,7 @@ Firstly, import NotificationAlertBanner.
 ```swift
 import NotificationAlertBanner
 ```
-## Initialization
+### Initialization
 
 ```swift
 NotificationAlertBanner.add(style: .t2D, title: "title", details: "details", logoImage: UIImage(named: "logo_image"), informationImage: UIImage(named: "information_image"))
@@ -62,6 +62,7 @@ class ViewController: UIViewController {
  NotificationAlertBanner.bannerTitleFontName = "MarkerFelt-Thin"
  NotificationAlertBanner.bannerDetailsFontName = "MarkerFelt-Thin"
 ```
+### Installation with CocoaPods
 
 ```
 pod 'NotificationAlertBanner', '0.0.8'
