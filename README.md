@@ -25,7 +25,7 @@ import NotificationAlertBanner
 ## Initialization
 
 ```swift
-NotificationAlertBanner.add(style: .topToDown, title: "title", details: "details", image: UIImage(named: "image"))
+NotificationAlertBanner.add(style: .t2D, title: "title", details: "details", logoImage: UIImage(named: "logo_image"), informationImage: UIImage(named: "information_image"))
 ```
 
 ```swift
@@ -46,10 +46,23 @@ class ViewController: UIViewController {
     }
 
     @objc func btnClick(sender:UIButton) {
-        NotificationAlertBanner.add(style: .topToDown, title: "title", details: "details", image: UIImage(named: "image"))
+        NotificationAlertBanner.add(style: .t2D, title: "title", details: "details", logoImage: UIImage(named: "logo_image"), informationImage: UIImage(named: "information_image"))
     }
 }
 ```
+
+### Modify
+```swift
+ NotificationAlertBanner.bannerBackGroundColor = UIColor.white
+ NotificationAlertBanner.bannerTitleFontColor = UIColor.black
+ NotificationAlertBanner.bannerDetailsFontColor = UIColor.red
+ NotificationAlertBanner.bannerBackGroundImage = UIImage(named: "background_image")
+ NotificationAlertBanner.bannerBorderColor = .black
+ NotificationAlertBanner.bannerBorderWidth = 2
+ NotificationAlertBanner.bannerTitleFontName = "MarkerFelt-Thin"
+ NotificationAlertBanner.bannerDetailsFontName = "MarkerFelt-Thin"
+```
+
 ```
 pod 'NotificationAlertBanner', '0.0.8'
 ```
