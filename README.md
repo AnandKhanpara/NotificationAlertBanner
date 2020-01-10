@@ -3,15 +3,17 @@ Under Developement ......
 ```
 # NotificationAlertBanner
 NotificationAlertBanner
-```
-pod 'NotificationAlertBanner', '0.0.4'
-```
+
+![alt tag](https://github.com/AnandKhanpara/GitProHubSupporting/blob/master/GitProHubSupporting/NAB/NAB_A_1.gif) 
+
+
 ## Style
 
-| Type | Type | 
-|---|---|
-|1. topToDown | 2. rightToLeft |
-|![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/BannerTopToDownNew.gif) |![alt tag](https://raw.githubusercontent.com/AnandKhanpara/NotificationAlertBanner/master/NotificationAlertBanner/Assets/BannerRightToLeftNew.gif)|
+| Type | Type | Type |
+|---|---|---|
+|1. t2D | 2. r2L | 3. l2R |
+|4. t2DDetails | 5. r2LDetails | 6. l2RDetails |
+|7. t2DImageDetails | 8. r2LImageDetails | 9. l2RImageDetails |
 
 ## Usage
  
@@ -48,4 +50,6 @@ class ViewController: UIViewController {
     }
 }
 ```
-
+```
+pod 'NotificationAlertBanner', '0.0.8'
+```
