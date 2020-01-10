@@ -19,7 +19,6 @@ typealias WP = WindowProperty
 
 extension UIView {
 
-    
     //MARK:- UpdateView
     
     @discardableResult
@@ -54,9 +53,11 @@ extension UIView {
     }
     
     @discardableResult
-    func border(_ color:UIColor, width:CGFloat) -> UIView {
-        self.layer.borderColor = color.cgColor
-        self.layer.borderWidth = width
+    func border(_ color:UIColor?, width:CGFloat?) -> UIView {
+        if let color = color, let width = width {
+            self.layer.borderColor = color.cgColor
+            self.layer.borderWidth = width
+        }
         return self
     }
     
@@ -98,8 +99,8 @@ extension UIView {
            return self
        }
     
-    func fontCustom(_ name:String, size:CGFloat) -> UIView {
-        if let label = self as? UILabel {
+    func fontCustom(_ name:String?, size:CGFloat) -> UIView {
+        if let label = self as? UILabel, let name = name {
             label.font = UIFont(name: name, size: size)
             return label as UIView
         }
@@ -140,6 +141,7 @@ extension UIView {
         image.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(image)
         image.constraintBounds(self)
+        self.clipsToBounds = true
         return self
     }
     
