@@ -1,9 +1,9 @@
 //
-//  WindowProperty .swift
+//  WindowProperty.swift
 //  NotificationAlertBannerExample
 //
-//  Created by ZerOnes on 06/01/2020.
-//  Copyright © 2020 ZerOnes. All rights reserved.
+//  Created by Anand Khanpara on 06/01/2020.
+//  Copyright © 2020 Anand Khanpara. All rights reserved.
 //
 
 import Foundation

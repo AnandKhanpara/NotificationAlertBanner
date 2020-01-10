@@ -65,5 +65,5 @@ class ViewController: UIViewController {
 ### Installation with CocoaPods
 
 ```
-pod 'NotificationAlertBanner', '0.0.8'
+pod 'NotificationAlertBanner', '0.0.9'
 ```
